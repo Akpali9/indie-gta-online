@@ -6,8 +6,8 @@ public class PlayerMotor : MonoBehaviour
     public float speed = 6f;
     public float gravity = -9.81f;
 
-    CharacterController controller;
-    Vector3 velocity;
+    private CharacterController controller;
+    private Vector3 velocity;
 
     void Start()
     {
