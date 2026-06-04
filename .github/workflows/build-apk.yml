@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 11
 
-      - name: Build Info
-        run: echo "Unity build requires Unity installed or Unity Cloud Build"
+      - name: Build Notice
+        run: echo "Unity APK build requires Unity Cloud Build or self-hosted runner"
 
       - name: Upload Artifact Placeholder
-        run: echo "APK build step goes here (Unity Cloud Build recommended)"
+        run: echo "No Unity installed on GitHub runner"
