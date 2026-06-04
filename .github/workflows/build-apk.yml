@@ -1,0 +1,25 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 11
+
+      - name: Build Info
+        run: echo "Unity build requires Unity installed or Unity Cloud Build"
+
+      - name: Upload Artifact Placeholder
+        run: echo "APK build step goes here (Unity Cloud Build recommended)"
